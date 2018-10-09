@@ -1,6 +1,6 @@
 {
   "name": "storage-wxapp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "微信小程序缓存封转,鉴于小程序缓存读写性能问题,使用内存进行临时中转,监控小程序生命周期进行落盘",
   "main": "lib/index.js",
   "scripts": {
