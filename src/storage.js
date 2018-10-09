@@ -180,7 +180,7 @@ function getDateBaseNum(base) {
   return baseNum[base] || 0;
 }
 
-exports.default =  {
+export default {
   flushAll: flushAll,
   getStorage: getStorage,
   init: _init,
