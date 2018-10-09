@@ -2,15 +2,15 @@
   "name": "storage-wxapp",
   "version": "0.0.2",
   "description": "微信小程序缓存封转,鉴于小程序缓存读写性能问题,使用内存进行临时中转,监控小程序生命周期进行落盘",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build":"npm run clean && npm run babelBuild",
+    "build":"npm run cleanOther && npm run babelBuild",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "./node_modules/.bin/rimraf lib",
+    "cleanOther": "./node_modules/.bin/rimraf lib",
     "babelBuild": "./node_modules/.bin/babel src --out-dir lib"
   },
   "keywords": [],
-  "author": "",
+  "author": "fitcong",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
