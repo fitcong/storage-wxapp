@@ -1,2 +1,2 @@
 const MKStorage = require('./storage')
-module.exports = MKStorage.default;
+export default MKStorage.default;
