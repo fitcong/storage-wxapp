@@ -66,7 +66,7 @@ function _getStorage(k) {
  * @param {*Object|Boolean|String} v 缓存value
  * @param {*Object} options 可选项,d:失效时长
  */
-function setStorage(k, v, options) {
+function setStorage(k, v, options = {}) {
   if (typeof k !== 'string') {
     Logger.err(`please check input ${k},${v},${options}`);
   }
@@ -180,7 +180,7 @@ function getDateBaseNum(base) {
   return baseNum[base] || 0;
 }
 
-export default {
+exports.default =  {
   flushAll: flushAll,
   getStorage: getStorage,
   init: _init,

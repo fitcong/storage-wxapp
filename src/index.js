@@ -1,3 +1,3 @@
 import MKStorage from './storage';
 
-exports.default = MKStorage;
+exports.default = MKStorage.default;
