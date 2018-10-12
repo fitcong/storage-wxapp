@@ -6,15 +6,13 @@ var storageMap = {};
 var tempStorage = {};
 
 function _init(debug = false) {
-  if (isInit) {
-    return;
+  if (!isInit) {
+    Logger._initLogger(debug);
+    // 从现有的缓存数据中取出相关数据进行同步
+    const realStorage = _pullStorageSync();
+    storageMap = realStorage.allStorage;
+    isInit = true;
   }
-  Logger._initLogger(debug);
-  // 从现有的缓存数据中取出相关数据进行同步
-  const realStorage = _pullStorageSync();
-  storageMap = realStorage.allStorage;
-  //
-  isInit = true;
 }
 
 /**

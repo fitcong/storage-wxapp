@@ -1,4 +1,4 @@
-let isDebug = false;
+let isDebug =  process.env.NODE_ENV !== 'production';
 const logger = console;
 
 const loggerInstance = (function() {
